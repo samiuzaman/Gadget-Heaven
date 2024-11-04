@@ -17,6 +17,22 @@
     "rating": 4.5
   },
   {
+    "product_id": 202,
+    "product_title": "Sony Alpha a7 III Mirrorless Camera",
+    "product_image": "https://i.ibb.co.com/W3fyFG4/Sony-Alpha-a7.png",
+    "category": "Camera",
+    "price": 1999.99,
+    "description": "Sony's versatile full-frame mirrorless camera with impressive low-light performance and fast autofocus.",
+    "Specification": [
+      "24.2 MP full-frame sensor",
+      "4K video recording",
+      "693-point phase-detection AF",
+      "Battery life up to 710 shots"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
     "product_id": 1002,
     "product_title": "iPhone 14",
     "product_image": "https://i.ibb.co.com/VBzZyvp/i-Phone-14.png",
@@ -68,40 +84,6 @@
     "rating": 4.7
   },
   {
-    "product_id": 2002,
-    "product_title": "MacBook Air M2",
-    "product_image": "https://i.ibb.co.com/QkVdZVz/Mac-Book-Air-M2.jpg",
-    "category": "laptop",
-    "price": 1199,
-    "description": "Apple MacBook Air with M2 chip, Retina display, and all-day battery life in a lightweight, fanless design.",
-    "specification": [
-      "13.6-inch Retina display",
-      "8GB RAM",
-      "256GB SSD",
-      "Apple M2 chip",
-      "macOS"
-    ],
-    "availability": true,
-    "rating": 4.9
-  },
-  {
-    "product_id": 2003,
-    "product_title": "HP Spectre x360",
-    "product_image": "https://i.ibb.co.com/jWWb0d5/HP-Spectre-x360.png",
-    "category": "laptop",
-    "price": 1299,
-    "description": "HP Spectre x360 with Intel Evo platform, touch screen, and convertible 2-in-1 design.",
-    "specification": [
-      "13.5-inch OLED display",
-      "16GB RAM",
-      "512GB SSD",
-      "Intel Core i7",
-      "Windows 11"
-    ],
-    "availability": false,
-    "rating": 4.8
-  },
-  {
     "product_id": 3001,
     "product_title": "Apple AirPods Pro",
     "product_image": "https://i.ibb.co.com/t4nFxv9/Apple-Air-Pods-Pro.png",
@@ -118,6 +100,41 @@
     "availability": true,
     "rating": 4.6
   },
+  {
+    "product_id": 2002,
+    "product_title": "MacBook Air M2",
+    "product_image": "https://i.ibb.co.com/QkVdZVz/Mac-Book-Air-M2.jpg",
+    "category": "laptop",
+    "price": 1199,
+    "description": "Apple MacBook Air with M2 chip, Retina display, and all-day battery life in a lightweight, fanless design.",
+    "specification": [
+      "13.6-inch Retina display",
+      "8GB RAM",
+      "256GB SSD",
+      "Apple M2 chip",
+      "macOS"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+
+  {
+    "product_id": 5017,
+    "product_title": "Samsung Odyssey G3 24-Inch Full HD Monitor",
+    "product_image": "https://i.ibb.co.com/540CJ2X/Samsung-Odyssey-G3-24.webp",
+    "category": "Monitor",
+    "price": 189.99,
+    "description": "Samsung Odyssey G3 Full HD monitor with a fast refresh rate, perfect for gaming.",
+    "Specification": [
+      "1920 x 1080 resolution",
+      "144Hz refresh rate",
+      "1ms response time",
+      "AMD FreeSync technology"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+
   {
     "product_id": 3002,
     "product_title": "BOYA BY-PM500 USB Microphone",
@@ -136,38 +153,20 @@
     "rating": 4.6
   },
   {
-    "product_id": 3020,
-    "product_title": "Corsair HS60 HAPTIC Gaming Headset",
-    "product_image": "https://i.ibb.co.com/Dz2c2yR/Corsair-HS60-HAPTIC-Headset.webp",
-    "category": "gadget",
-    "price": 129,
-    "description": "Corsair HS60 HAPTIC gaming headset with haptic bass feedback and comfortable memory foam ear pads.",
-    "specification": [
-      "Haptic bass feedback",
-      "50mm neodymium drivers",
-      "Detachable noise-canceling microphone",
-      "Memory foam ear pads",
-      "USB connection"
+    "product_id": 203,
+    "product_title": "Nikon Z50 Mirrorless Camera",
+    "product_image": "https://i.ibb.co.com/60xdcZ2/Nikon-Z50.webp",
+    "category": "Camera",
+    "price": 859.99,
+    "description": "Compact and lightweight mirrorless camera from Nikon, great for beginners and travel photography.",
+    "Specification": [
+      "20.9 MP APS-C sensor",
+      "4K UHD video",
+      "Eye-detection AF",
+      "Flip-down touchscreen"
     ],
-    "availability": true,
-    "rating": 4.5
-  },
-  {
-    "product_id": 1004,
-    "product_title": "OnePlus 11",
-    "product_image": "https://i.ibb.co.com/1ns9Vkb/One-Plus-11.jpg",
-    "category": "mobile",
-    "price": 699,
-    "description": "OnePlus 11 with Snapdragon 8 Gen 2, 120Hz Fluid AMOLED display, and Hasselblad triple camera system.",
-    "specification": [
-      "6.7-inch Fluid AMOLED display",
-      "12GB RAM",
-      "256GB Storage",
-      "5000mAh battery",
-      "5G connectivity"
-    ],
-    "availability": true,
-    "rating": 4.7
+    "availability": false,
+    "rating": 4.6
   },
   {
     "product_id": 2004,
@@ -187,6 +186,24 @@
     "rating": 4.6
   },
   {
+    "product_id": 3020,
+    "product_title": "Corsair HS60 HAPTIC Gaming Headset",
+    "product_image": "https://i.ibb.co.com/Dz2c2yR/Corsair-HS60-HAPTIC-Headset.webp",
+    "category": "gadget",
+    "price": 129,
+    "description": "Corsair HS60 HAPTIC gaming headset with haptic bass feedback and comfortable memory foam ear pads.",
+    "specification": [
+      "Haptic bass feedback",
+      "50mm neodymium drivers",
+      "Detachable noise-canceling microphone",
+      "Memory foam ear pads",
+      "USB connection"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+
+  {
     "product_id": 3010,
     "product_title": "JBL Flip 6 Speaker",
     "product_image": "https://i.ibb.co.com/Wg7Rm1X/JBL-Flip-6-Sound-Box.png",
@@ -202,5 +219,88 @@
     ],
     "availability": true,
     "rating": 4.6
+  },
+  {
+    "product_id": 201,
+    "product_title": "Canon EOS R5 Mirrorless Camera",
+    "product_image": "https://i.ibb.co.com/XJzjMWw/Canon-EOS-R5.png",
+    "category": "Camera",
+    "price": 3899.99,
+    "description": "Canon's flagship mirrorless camera offering high-resolution stills and 8K video recording, perfect for professionals.",
+    "Specification": [
+      "45 MP full-frame CMOS sensor",
+      "8K video recording at 30fps",
+      "Dual Pixel CMOS AF II",
+      "In-body image stabilization"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+
+  {
+    "product_id": 5018,
+    "product_title": "Dell UltraSharp U2720Q 27-Inch 4K UHD Monitor",
+    "product_image": "https://i.ibb.co.com/1qHMpn9/Dell-Ultra-Sharp-U2720-Q-27.png",
+    "category": "Monitor",
+    "price": 549.99,
+    "description": "Dell's premium 4K UHD monitor with vibrant color accuracy, ideal for professional creatives.",
+    "Specification": [
+      "3840 x 2160 resolution",
+      "IPS panel with 99% sRGB coverage",
+      "HDR10 support",
+      "USB-C connectivity"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 1004,
+    "product_title": "OnePlus 11",
+    "product_image": "https://i.ibb.co.com/1ns9Vkb/One-Plus-11.jpg",
+    "category": "mobile",
+    "price": 699,
+    "description": "OnePlus 11 with Snapdragon 8 Gen 2, 120Hz Fluid AMOLED display, and Hasselblad triple camera system.",
+    "specification": [
+      "6.7-inch Fluid AMOLED display",
+      "12GB RAM",
+      "256GB Storage",
+      "5000mAh battery",
+      "5G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 5016,
+    "product_title": "LG UltraWide 34WN80C-B 34-Inch Curved Monitor",
+    "product_image": "https://i.ibb.co.com/wBJBmr0/LG-34-WQ75-C.jpg",
+    "category": "Monitor",
+    "price": 649.99,
+    "description": "LG's 34-inch curved ultrawide monitor with USB-C, ideal for multitasking and immersive visuals.",
+    "Specification": [
+      "3440 x 1440 resolution",
+      "21:9 aspect ratio",
+      "USB-C with 60W power delivery",
+      "HDR10 support"
+    ],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": 2003,
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co.com/jWWb0d5/HP-Spectre-x360.png",
+    "category": "laptop",
+    "price": 1299,
+    "description": "HP Spectre x360 with Intel Evo platform, touch screen, and convertible 2-in-1 design.",
+    "specification": [
+      "13.5-inch OLED display",
+      "16GB RAM",
+      "512GB SSD",
+      "Intel Core i7",
+      "Windows 11"
+    ],
+    "availability": false,
+    "rating": 4.8
   }
 ]

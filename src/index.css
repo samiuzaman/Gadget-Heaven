@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 body {
-  @apply font-Sora;
+  @apply font-Sora pt-4;
 }
 

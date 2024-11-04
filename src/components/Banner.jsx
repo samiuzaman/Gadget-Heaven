@@ -2,7 +2,7 @@ import ProductDetails from "./ProductDetails";
 
 const Banner = () => {
   return (
-    <div className="relative w-11/12 mx-auto text-center bg-primary pt-20 pb-52 mt-[-24px] rounded-b-2xl">
+    <div className="relative w-11/12 mx-auto text-center bg-primary pt-20 pb-64 mt-[-24px] rounded-b-2xl mb-72">
       <h1 className="text-3xl lg:text-5xl text-white font-bold w-4/6 mx-auto mb-6">
         Upgrade Your Tech Accessorize with Gadget Heaven Accessories
       </h1>
@@ -13,7 +13,7 @@ const Banner = () => {
       <button className="btn bg-white rounded-full text-primary text-base font-medium my-8">
         Shop Now
       </button>
-      {/* <ProductDetails></ProductDetails> */}
+      <ProductDetails></ProductDetails>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Navbar = () => {
   const [color, setColor] = useState(true);
   return (
     <div
-      className={`w-11/12 mx-auto sticky navbar rounded-t-2xl mt-4 px-16 ${
+      className={`w-11/12 mx-auto sticky navbar rounded-t-2xl  px-16 ${
         color ? "bg-primary text-white" : "text-myDark3"
       }`}
     >

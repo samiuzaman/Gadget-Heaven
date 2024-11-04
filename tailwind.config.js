@@ -14,7 +14,7 @@ export default {
         myDark3: "#0B0B0B",
         myDark4: "#09080F",
         third: "#FF0000",
-        fourth: "#ee",
+        fourth: "#F7F7F7",
       },
       images: {
         banner: "url('./assets/banner.jpg')",
