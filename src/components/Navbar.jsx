@@ -6,7 +6,7 @@ const Navbar = () => {
   const [color, setColor] = useState(true);
   return (
     <div
-      className={`navbar bg-base-100 w-11/12 mx-auto rounded-t-2xl p-6 ${
+      className={`navbar bg-base-100 w-11/12 mx-auto rounded-t-2xl px-2 md:px-20 ${
         color ? "bg-primary text-white" : "bg-fourth text-myDark3"
       }`}
     >
