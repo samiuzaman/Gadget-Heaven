@@ -3,6 +3,7 @@ import Home from "../Pages/Home";
 import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
 import Layout from "../Layout/Layout";
+import ProductDetail from "../components/ProductDetail";
 
 const routes = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ const routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "detail/:id",
+        loader: () => fetch("../gadget.json"),
+        element: <ProductDetail></ProductDetail>,
       },
     ],
   },

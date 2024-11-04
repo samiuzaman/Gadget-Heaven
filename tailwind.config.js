@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Sora: ["Sora", "sans - serif"],
+        Sora: ["Sora"],
       },
       colors: {
         primary: "#9538E2",
@@ -15,6 +15,8 @@ export default {
         myDark4: "#09080F",
         third: "#FF0000",
         fourth: "#F7F7F7",
+        myGreen: "#309C08",
+        myGreenlight: "#309C081A",
       },
       images: {
         banner: "url('./assets/banner.jpg')",

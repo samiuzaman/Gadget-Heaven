@@ -23,7 +23,7 @@
     "category": "Camera",
     "price": 1999.99,
     "description": "Sony's versatile full-frame mirrorless camera with impressive low-light performance and fast autofocus.",
-    "Specification": [
+    "specification": [
       "24.2 MP full-frame sensor",
       "4K video recording",
       "693-point phase-detection AF",
@@ -159,7 +159,7 @@
     "category": "Camera",
     "price": 859.99,
     "description": "Compact and lightweight mirrorless camera from Nikon, great for beginners and travel photography.",
-    "Specification": [
+    "specification": [
       "20.9 MP APS-C sensor",
       "4K UHD video",
       "Eye-detection AF",
@@ -227,7 +227,8 @@
     "category": "Camera",
     "price": 3899.99,
     "description": "Canon's flagship mirrorless camera offering high-resolution stills and 8K video recording, perfect for professionals.",
-    "Specification": [
+
+    "specification": [
       "45 MP full-frame CMOS sensor",
       "8K video recording at 30fps",
       "Dual Pixel CMOS AF II",

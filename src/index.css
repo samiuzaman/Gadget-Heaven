@@ -7,5 +7,5 @@ html {
 }
 
 body {
-  @apply font-Sora pt-4;
+  @apply  pt-4 bg-fourth;
 }
