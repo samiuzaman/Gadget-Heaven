@@ -27,11 +27,11 @@ const ProductDetail = () => {
   }, [allData, id]);
 
   return (
-    <div className="relative w-11/12 mx-auto text-center bg-primary  pb-64 mt-[-24px] rounded-b-2xl mb-72">
+    <div className="relative text-center bg-primary  pb-64 mt-[-24px] mb-72 pt-8">
       <h1 className="text-2xl lg:text-3xl text-white font-bold w-full lg:w-4/6 mx-auto px-5 lg:px-0">
         Product Details
       </h1>
-      <p className=" text-white p-6 lg:px-72 text-center">
+      <p className=" text-white pt-6 pb-10 lg:px-72 text-center">
         Explore the latest gadgets that will take your experience to the next
         level. From smart devices to the coolest accessories, we have it all!
       </p>

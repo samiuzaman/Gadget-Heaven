@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import { NavBackground } from "../Layout/Layout";
 
 const ProductCard = () => {
+  const [color, setColor] = useContext(NavBackground);
   const allData = useLoaderData();
   const [products, setProducts] = useState([]);
   useEffect(() => {
     setProducts(allData.slice(0, 6));
   }, [allData, setProducts]);
-  
-  
 
   return (
     <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -35,6 +35,7 @@ const ProductCard = () => {
             <div className="card-actions">
               <Link
                 to={`/detail/${product?.product_id}`}
+                onClick={() => setColor(false)}
                 className="btn btn-outline border-primary text-primary hover:bg-primary rounded-full text-base font-medium"
               >
                 View Details

@@ -2,6 +2,8 @@ import Banner from "../components/Banner";
 import Categories from "../components/categories";
 import ProductCard from "../components/ProductCard";
 
+
+
 const Home = () => {
   return (
     <div>

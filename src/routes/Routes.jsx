@@ -4,7 +4,6 @@ import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
 import Layout from "../Layout/Layout";
 import ProductDetail from "../components/ProductDetail";
-import Cart from "../components/Cart";
 import Error from "../Pages/Error";
 
 const routes = createBrowserRouter([

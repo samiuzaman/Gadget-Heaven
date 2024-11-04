@@ -13,7 +13,7 @@ const Banner = () => {
       <button className="btn bg-white rounded-full text-primary text-base font-medium my-8">
         Shop Now
       </button>
-      <div className="absolute lg:inset-x-12 w-full lg:w-4/5 mx-auto  border-2 border-white rounded-2xl text-center h-[536px]">
+      <div className="absolute lg:inset-x-12 w-full lg:w-4/5 mx-auto  border-2 border-white rounded-2xl text-center h-[536px] bg-white/30">
         <figure className="object-fill w-full h-full p-4">
           <img
             className="w-full h-full rounded-2xl"
