@@ -9,11 +9,11 @@ const Categories = () => {
   }, []);
 
   return (
-    <div className="bg-white w-60 flex flex-col gap-6 p-6 rounded-xl shadow-xl">
+    <div className="bg-white lg:w-48 flex flex-col gap-6 p-5 rounded-xl shadow-xl">
       {categorys?.map((category) => (
         <button
           key={category.id}
-          className="text-myDark2 bg-base-200 py-2 rounded-full"
+          className="text-myDark2 bg-base-200 p-2 rounded-full"
         >
           {category.category}
         </button>

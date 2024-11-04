@@ -1,6 +1,5 @@
 import Banner from "../components/Banner";
 import Categories from "../components/categories";
-import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 
 const Home = () => {
@@ -9,9 +8,9 @@ const Home = () => {
       {/* Banner Section Code Start Here */}
       <Banner></Banner>
       {/* Category and Product section Code Start Here  */}
-      <div className="w-11/12 lg:w-5/6 mx-auto flex flex-col justify-center mt-48 text-center pt-28">
-        <h2 className="text-2xl lg:text-4xl">Explore Cutting-Edge Gadgets</h2>
-        <div className="flex flex-col lg:flex-row justify-between items-start">
+      <div className="w-11/12 mx-auto flex flex-col itme mt-48 mb-12 text-center pt-28">
+        <h2 className="text-2xl lg:text-4xl mb-8">Explore Cutting-Edge Gadgets</h2>
+        <div className="flex flex-col lg:flex-row justify-center items-start gap-6">
           <Categories></Categories>
           <ProductCard></ProductCard>
         </div>

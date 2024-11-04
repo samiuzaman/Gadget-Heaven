@@ -2,7 +2,7 @@
   {
     "product_id": 1001,
     "product_title": "Samsung Galaxy S21",
-    "product_image": "https://i.ibb.co.com/VBzZyvp/i-Phone-14.png",
+    "product_image": "https://i.ibb.co.com/fSkp7XW/Samsung-Galaxy-S21.png",
     "category": "mobile",
     "price": 799,
     "description": "Samsung Galaxy S21 with 5G technology, dynamic AMOLED 2X display, and triple-lens camera system.",
@@ -18,7 +18,7 @@
   },
   {
     "product_id": 202,
-    "product_title": "Sony Alpha a7 III Mirrorless Camera",
+    "product_title": "Sony Alpha a7 III ",
     "product_image": "https://i.ibb.co.com/W3fyFG4/Sony-Alpha-a7.png",
     "category": "Camera",
     "price": 1999.99,
@@ -34,11 +34,11 @@
   },
   {
     "product_id": 1002,
-    "product_title": "iPhone 14",
+    "product_title": "iPhone 14 Pro",
     "product_image": "https://i.ibb.co.com/VBzZyvp/i-Phone-14.png",
     "category": "mobile",
     "price": 1099,
-    "description": "iPhone 14 with Super Retina XDR display, A15 Bionic chip, and improved camera system.",
+    "description": "iPhone 14 Pro with Super Retina XDR display, A15 Bionic chip, and improved camera system.",
     "specification": [
       "6.1-inch OLED display",
       "6GB RAM",
@@ -52,7 +52,7 @@
   {
     "product_id": 1003,
     "product_title": "Google Pixel 8",
-    "product_image": "https://i.ibb.co.com/qkTJMLq/Pixel-8-And-Pixel-8-Pro.jpg",
+    "product_image": "https://i.ibb.co.com/RzgmQcR/Pixel-8-no-background.png",
     "category": "mobile",
     "price": 599,
     "description": "Google Pixel 8 with Tensor G2 chip, enhanced camera features, and adaptive battery.",
@@ -103,7 +103,7 @@
   {
     "product_id": 2002,
     "product_title": "MacBook Air M2",
-    "product_image": "https://i.ibb.co.com/QkVdZVz/Mac-Book-Air-M2.jpg",
+    "product_image": "https://i.ibb.co.com/5nzMbqS/Mac-Book-Air-M2-no-background.png",
     "category": "laptop",
     "price": 1199,
     "description": "Apple MacBook Air with M2 chip, Retina display, and all-day battery life in a lightweight, fanless design.",
@@ -120,7 +120,7 @@
 
   {
     "product_id": 5017,
-    "product_title": "Samsung Odyssey G3 24-Inch Full HD Monitor",
+    "product_title": "Samsung Odyssey G3 24-Inch",
     "product_image": "https://i.ibb.co.com/540CJ2X/Samsung-Odyssey-G3-24.webp",
     "category": "Monitor",
     "price": 189.99,
@@ -137,7 +137,7 @@
 
   {
     "product_id": 3002,
-    "product_title": "BOYA BY-PM500 USB Microphone",
+    "product_title": "BOYA BY-PM500 Microphone",
     "product_image": "https://i.ibb.co.com/LRHmNZs/BOYA-BY.png",
     "category": "gadget",
     "price": 79,
@@ -155,7 +155,7 @@
   {
     "product_id": 203,
     "product_title": "Nikon Z50 Mirrorless Camera",
-    "product_image": "https://i.ibb.co.com/60xdcZ2/Nikon-Z50.webp",
+    "product_image": "https://i.ibb.co.com/kKcr4pb/Nikon-Z50-no-background.png",
     "category": "Camera",
     "price": 859.99,
     "description": "Compact and lightweight mirrorless camera from Nikon, great for beginners and travel photography.",
@@ -170,7 +170,7 @@
   },
   {
     "product_id": 2004,
-    "product_title": "Microsoft Surface Laptop 5",
+    "product_title": "Microsoft Surface Laptop",
     "product_image": "https://i.ibb.co.com/q5GF1Nh/Microsoft-Surface-Laptop.png",
     "category": "laptop",
     "price": 1399,
@@ -187,7 +187,7 @@
   },
   {
     "product_id": 3020,
-    "product_title": "Corsair HS60 HAPTIC Gaming Headset",
+    "product_title": "Corsair HS60 HAPTIC Headset",
     "product_image": "https://i.ibb.co.com/Dz2c2yR/Corsair-HS60-HAPTIC-Headset.webp",
     "category": "gadget",
     "price": 129,
@@ -222,7 +222,7 @@
   },
   {
     "product_id": 201,
-    "product_title": "Canon EOS R5 Mirrorless Camera",
+    "product_title": "Canon EOS R5 Camera",
     "product_image": "https://i.ibb.co.com/XJzjMWw/Canon-EOS-R5.png",
     "category": "Camera",
     "price": 3899.99,
@@ -239,7 +239,7 @@
 
   {
     "product_id": 5018,
-    "product_title": "Dell UltraSharp U2720Q 27-Inch 4K UHD Monitor",
+    "product_title": "Dell UltraSharp U2720Q",
     "product_image": "https://i.ibb.co.com/1qHMpn9/Dell-Ultra-Sharp-U2720-Q-27.png",
     "category": "Monitor",
     "price": 549.99,
@@ -272,7 +272,7 @@
   },
   {
     "product_id": 5016,
-    "product_title": "LG UltraWide 34WN80C-B 34-Inch Curved Monitor",
+    "product_title": "LG UltraWide 34WN80C-B",
     "product_image": "https://i.ibb.co.com/wBJBmr0/LG-34-WQ75-C.jpg",
     "category": "Monitor",
     "price": 649.99,
