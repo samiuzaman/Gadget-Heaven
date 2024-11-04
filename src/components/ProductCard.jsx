@@ -1,14 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { NavBackground } from "../Layout/Layout";
+import { CategoriesProducts } from "../Pages/Home";
 
 const ProductCard = () => {
   const [color, setColor] = useContext(NavBackground);
-  const allData = useLoaderData();
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    setProducts(allData.slice(0, 6));
-  }, [allData, setProducts]);
+  const [products, setProducts] = useContext(CategoriesProducts);
 
   return (
     <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -44,6 +41,11 @@ const ProductCard = () => {
           </div>
         </div>
       ))}
+      {products.length === 0 ? (
+        <p className="text-3xl text-green-600 font-bold">No Data Found</p>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

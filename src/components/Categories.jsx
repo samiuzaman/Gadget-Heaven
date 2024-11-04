@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Categories = () => {
+const Categories = ({ handleCategory }) => {
   const [categorys, setCategory] = useState([]);
   useEffect(() => {
     fetch("categories.json")
@@ -12,6 +12,7 @@ const Categories = () => {
     <div className="bg-white w-full lg:w-52 grid grid-cols-2 lg:grid-cols-1 gap-6 p-4 rounded-xl shadow-xl">
       {categorys?.map((category) => (
         <button
+          onClick={() => handleCategory(category.category)}
           key={category.id}
           className="text-myDark2 bg-base-200 p-2 rounded-full"
         >
