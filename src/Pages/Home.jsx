@@ -10,7 +10,7 @@ const Home = () => {
       {/* Category and Product section Code Start Here  */}
       <div className="w-11/12 mx-auto flex flex-col itme mt-48 mb-12 text-center pt-28">
         <h2 className="text-2xl lg:text-4xl mb-8">Explore Cutting-Edge Gadgets</h2>
-        <div className="flex flex-col lg:flex-row justify-center items-start gap-6">
+        <div className="w-11/12 mx-auto lg:w-full flex flex-col lg:flex-row justify-center items-start gap-6">
           <Categories></Categories>
           <ProductCard></ProductCard>
         </div>
