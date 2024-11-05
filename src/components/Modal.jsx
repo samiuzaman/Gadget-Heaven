@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import Success from "../assets/success.png";
-import { TotalProductPrice } from "../Layout/Layout";
+import { ClearAllData, TotalProductPrice } from "../Layout/Layout";
 import { Link, useNavigate } from "react-router-dom";
+
 const Modal = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate;
   const [totalPrice, setTotalPrice] = useContext(TotalProductPrice);
+  const handleClearData = useContext(ClearAllData);
   return (
     <div>
       <button
@@ -29,7 +31,7 @@ const Modal = () => {
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
-                onClick={() => (navigate(0), navigate("/"))}
+                onClick={() => navigate(0)}
                 className="w-full btn text-lg font-bold hover:bg-primary hover:text-white rounded-full"
               >
                 Close

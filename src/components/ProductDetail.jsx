@@ -40,7 +40,7 @@ const ProductDetail = () => {
       </p>
       <div className="absolute lg:inset-x-12 w-full lg:w-4/5 mx-auto flex flex-col lg:flex-row p-6 bg-white border-2 border-white rounded-2xl text-center gap-8">
         <figure className="w-[450px] bg-base-200 flex items-center rounded-xl ">
-          <img className="w-full scale-150" src={product_image} alt="" />
+          <img className="w-full " src={product_image} alt="" />
         </figure>
         <div className="text-left text-secondary">
           <h3 className="text-2xl font-semibold text-myDark1 mb-3">
