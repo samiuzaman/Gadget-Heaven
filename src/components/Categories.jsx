@@ -14,7 +14,7 @@ const Categories = ({ handleCategory }) => {
         <button
           onClick={() => handleCategory(category.category)}
           key={category.id}
-          className="text-myDark2 bg-base-200 p-2 rounded-full"
+          className="btn  text-myDark2 bg-base-200 hover:bg-primary focus:bg-primary focus:text-white p-2 rounded-full"
         >
           {category.category}
         </button>

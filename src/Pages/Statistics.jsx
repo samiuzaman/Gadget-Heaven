@@ -13,6 +13,7 @@ const Statistics = () => {
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
+        <h4>No Data to Show Statistics </h4>
       </div>
       {/* Heading Section Code Start Here */}
       <Graph></Graph>

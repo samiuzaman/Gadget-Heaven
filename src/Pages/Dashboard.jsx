@@ -4,7 +4,6 @@ import Wishlist from "../components/Wishlist";
 
 const Dashboard = () => {
   const [cart, setCart] = useState(true);
-  console.log(cart);
   return (
     <div>
       {/* Heading Section Code Start Here */}

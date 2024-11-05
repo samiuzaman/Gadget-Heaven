@@ -1,12 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useContext, useState } from "react";
-import { NavBackground } from "../Layout/Layout";
-
+import {
+  CartDataStore,
+  NavBackground,
+  TotalProductPrice,
+  WishlistDataStore,
+} from "../Layout/Layout";
 
 const Navbar = () => {
   const [color, setColor] = useContext(NavBackground);
-  
+  const [cart, setCart] = useContext(CartDataStore);
+  const [wishlist, setWishlist] = useContext(WishlistDataStore);
+  const [totalPrice, setTotalPrice] = useContext(TotalProductPrice);
+
   return (
     <div
       className={`navbar bg-base-100 w-11/12 mx-auto rounded-t-2xl px-2 md:px-20 ${
@@ -113,20 +120,28 @@ const Navbar = () => {
                 <span className="text-2xl">
                   <AiOutlineShoppingCart></AiOutlineShoppingCart>
                 </span>
-                <span className="badge badge-sm indicator-item">8</span>
+                <span
+                  className={`badge badge-sm indicator-item ${
+                    cart.length >= 1 ? "block" : "hidden"
+                  }`}
+                >
+                  {cart.length}
+                </span>
               </div>
             </div>
             <div
               tabIndex={0}
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
-              <div className="card-body">
-                <span className="text-lg font-bold text-black">8 Items</span>
-                <span className="text-info">Subtotal: $999</span>
+              <div className="card-body text-center">
+                <span className="text-lg font-bold text-black">
+                  {cart.length} Items
+                </span>
+                <span className="text-info">Subtotal: $ {totalPrice.toFixed(2)} </span>
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
+                  <Link to="/dashboard" className="btn btn-primary btn-block">
                     Dashboard
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -141,20 +156,27 @@ const Navbar = () => {
             >
               <div className="indicator text-xl">
                 <i className="fa-regular fa-heart"></i>
-                <span className="badge badge-sm indicator-item">8</span>
+                <span
+                  className={`badge badge-sm indicator-item ${
+                    wishlist.length >= 1 ? "block" : "hidden"
+                  }`}
+                >
+                  {wishlist.length}
+                </span>
               </div>
             </div>
             <div
               tabIndex={0}
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
             >
-              <div className="card-body">
-                <span className="text-lg font-bold text-black">8 Items</span>
-                <span className="text-info">Subtotal: $999</span>
+              <div className="card-body text-center">
+                <span className="text-lg font-bold text-black">
+                  {wishlist.length} Items
+                </span>
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
+                  <Link to="/dashboard" className="btn btn-primary btn-block">
                     Dashboard
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

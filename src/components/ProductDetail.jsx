@@ -1,14 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
-
 import { FaRegStarHalfStroke } from "react-icons/fa6";
+import { AddToCart, AddToWishlist } from "../Layout/Layout";
 
 const ProductDetail = () => {
   const { id } = useParams();
   const allData = useLoaderData();
   const [detail, setDetail] = useState({});
+  const handleAddToCart = useContext(AddToCart);
+  const handleAddToWishlist = useContext(AddToWishlist);
+
   const {
     product_image,
     product_title,
@@ -36,8 +39,8 @@ const ProductDetail = () => {
         level. From smart devices to the coolest accessories, we have it all!
       </p>
       <div className="absolute lg:inset-x-12 w-full lg:w-4/5 mx-auto flex flex-col lg:flex-row p-6 bg-white border-2 border-white rounded-2xl text-center gap-8">
-        <figure className="w-[400px]  bg-base-200 rounded-xl">
-          <img className="w-full h-full" src={product_image} alt="" />
+        <figure className="w-[450px] bg-base-200 flex items-center rounded-xl ">
+          <img className="w-full scale-150" src={product_image} alt="" />
         </figure>
         <div className="text-left text-secondary">
           <h3 className="text-2xl font-semibold text-myDark1 mb-3">
@@ -77,10 +80,17 @@ const ProductDetail = () => {
             </div>
           </div>
           <div className="flex justify-start items-center gap-x-6 mt-2">
-            <button className="btn btn-active bg-primary text-white hover:text-primary flex items-center rounded-full">
-              Add To Card <AiOutlineShoppingCart className="text-2xl"></AiOutlineShoppingCart>
+            <button
+              onClick={() => handleAddToCart(detail)}
+              className="btn btn-active bg-primary text-white hover:text-primary flex items-center rounded-full"
+            >
+              Add To Card
+              <AiOutlineShoppingCart className="text-2xl"></AiOutlineShoppingCart>
             </button>
-            <button className="btn rounded-full hover:text-primary text-xl">
+            <button
+              onClick={() => handleAddToWishlist(detail)}
+              className="btn rounded-full hover:text-primary text-xl"
+            >
               <i className="fa-regular fa-heart"></i>
             </button>
           </div>

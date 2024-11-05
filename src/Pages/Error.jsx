@@ -2,7 +2,6 @@ import { useRouteError } from "react-router-dom";
 
 const Error = () => {
   const error = useRouteError();
-  console.log(error);
   return (
     <div className="h-screen flex flex-col justify-center items-center gap-3">
       <div className="flex gap-4 items-end">

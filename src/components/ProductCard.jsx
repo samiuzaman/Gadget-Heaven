@@ -1,5 +1,5 @@
-import { useContext, useEffect } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { NavBackground } from "../Layout/Layout";
 import { CategoriesProducts } from "../Pages/Home";
 
@@ -12,7 +12,7 @@ const ProductCard = () => {
       {products?.map((product) => (
         <div
           key={product?.product_id}
-          className="card bg-base-100 min-w-80 max-w-96  shadow-xl"
+          className="card bg-base-100 min-w-80 max-w-96  shadow-xl transition hover:scale-105"
         >
           <figure className="h-52 mx-5 mt-5 rounded-lg bg-base-200">
             <img

@@ -1,4 +1,5 @@
-import { useLoaderData, useParams } from "react-router-dom";
+/* eslint-disable react-refresh/only-export-components */
+import { useLoaderData} from "react-router-dom";
 import Banner from "../components/Banner";
 import Categories from "../components/categories";
 import ProductCard from "../components/ProductCard";
@@ -13,8 +14,9 @@ const Home = () => {
   useEffect(() => {
     setProducts(allData.slice(0, 6));
   }, [allData, setProducts]);
-  console.log(products);
+  
 
+  // Categories Products
   const handleCategory = (categoryBy) => {
     if (categoryBy === "All Product") {
       setProducts(allData);
@@ -24,7 +26,7 @@ const Home = () => {
       );
     }
   };
-  console.log(products);
+  
 
   return (
     <div>
