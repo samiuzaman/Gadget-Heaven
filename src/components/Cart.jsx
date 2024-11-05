@@ -12,8 +12,7 @@ const Cart = () => {
     const sorting = [...cart].sort((a, b) => b.price - a.price);
     setCart(sorting);
   };
-
-  console.log(cart);
+  
   return (
     <div className="w-11/12 lg:w-5/6 mx-auto my-12">
       <div className="flex justify-between">

@@ -1,9 +1,16 @@
 /* eslint-disable react-refresh/only-export-components */
-import { Outlet } from "react-router-dom";
+import {
+  Outlet,
+  useLoaderData,
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import { FaS } from "react-icons/fa6";
 
 export const NavBackground = createContext(true);
 export const CartDataStore = createContext([]);
@@ -13,10 +20,16 @@ export const AddToCart = createContext(() => {});
 export const AddToWishlist = createContext(() => {});
 
 const Layout = () => {
+  const { pathname } = useLocation();
   const [color, setColor] = useState(true);
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+
+  console.log(pathname);
+  useEffect(() => {
+    pathname === `/` ? setColor(true) : setColor(false);
+  }, [pathname]);
 
   // Add To Cart Functionality
   const handleAddToCart = (product) => {
@@ -48,10 +61,6 @@ const Layout = () => {
       theme: "colored",
     });
   };
-
-  // const handleOpenModal = () => {
-  //   my_modal_5.showModal();
-  // };
 
   return (
     <div>

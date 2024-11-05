@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import {
   CartDataStore,
   NavBackground,
@@ -44,7 +44,6 @@ const Navbar = () => {
           >
             <NavLink
               to="/"
-              onClick={() => setColor(true)}
               className={({ isActive }) =>
                 `${isActive ? "underline font-bold" : ""} mr-8`
               }
@@ -53,7 +52,6 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/statistics"
-              onClick={() => setColor(false)}
               className={({ isActive }) =>
                 `${isActive ? "text-primary underline font-bold" : ""} mr-8`
               }
@@ -62,7 +60,6 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/dashboard"
-              onClick={() => setColor(false)}
               className={({ isActive }) =>
                 `${isActive ? "text-primary underline font-bold" : ""} mr-8`
               }
@@ -82,7 +79,6 @@ const Navbar = () => {
       <div className="hidden lg:block">
         <NavLink
           to="/"
-          onClick={() => setColor(true)}
           className={({ isActive }) =>
             `${isActive ? "underline font-bold" : ""} mr-8`
           }
@@ -91,7 +87,6 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/statistics"
-          onClick={() => setColor(false)}
           className={({ isActive }) =>
             `${isActive ? "text-primary underline font-bold" : ""} mr-8`
           }
@@ -100,7 +95,6 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/dashboard"
-          onClick={() => setColor(false)}
           className={({ isActive }) =>
             `${isActive ? "text-primary underline font-bold" : ""} mr-8`
           }
@@ -137,7 +131,9 @@ const Navbar = () => {
                 <span className="text-lg font-bold text-black">
                   {cart.length} Items
                 </span>
-                <span className="text-info">Subtotal: $ {totalPrice.toFixed(2)} </span>
+                <span className="text-info">
+                  Subtotal: $ {totalPrice.toFixed(2)}{" "}
+                </span>
                 <div className="card-actions">
                   <Link to="/dashboard" className="btn btn-primary btn-block">
                     Dashboard
