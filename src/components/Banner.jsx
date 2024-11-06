@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import DefaultImg from "../assets/banner.jpg";
 
 const Banner = () => {
@@ -10,9 +11,12 @@ const Banner = () => {
         Explore the latest gadgets that will take your experience to the next
         level. From smart devices to the coolest accessories, we have it all!
       </p>
-      <button className="btn bg-white rounded-full text-primary text-base font-medium my-8">
+      <Link
+        to="/dashboard"
+        className="btn bg-white rounded-full text-primary text-base font-medium my-8"
+      >
         Shop Now
-      </button>
+      </Link>
       <div className="absolute lg:inset-x-12 w-full lg:w-4/5 mx-auto  border-2 border-white rounded-2xl text-center h-[536px] bg-white/30">
         <figure className="object-fill w-full h-full p-4">
           <img

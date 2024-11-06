@@ -68,11 +68,11 @@
   },
   {
     "product_id": 2001,
-    "product_title": "Dell XPS 13",
-    "product_image": "https://i.ibb.co.com/qnpTvFj/Dell-XPS-13.png",
+    "product_title": "Asus Creator  X415KA Laptop",
+    "product_image": "https://i.ibb.co.com/cDz0T05/asus-x415k-A-laptop.png",
     "category": "Laptops",
     "price": 999,
-    "description": "Dell XPS 13 with a sleek design, Intel Core i7 processor, and InfinityEdge display for an immersive experience.",
+    "description": "Asus Creator X415KA with a sleek design, Intel Core i7 processor, and InfinityEdge display for an immersive experience.",
     "specification": [
       "13.3-inch FHD display",
       "16GB RAM",
@@ -120,11 +120,11 @@
 
   {
     "product_id": 5017,
-    "product_title": "Samsung Odyssey G3 24-Inch",
+    "product_title": "Gigabyte Odyssey G3",
     "product_image": "https://i.ibb.co.com/G9HG2PS/Samsung-Odyssey-G3-24.png",
     "category": "Monitor",
     "price": 189.99,
-    "description": "Samsung Odyssey G3 Full HD monitor with a fast refresh rate, perfect for gaming.",
+    "description": "Gigabyte Odyssey G3 Full HD monitor with a fast refresh rate, perfect for gaming.",
     "Specification": [
       "1920 x 1080 resolution",
       "144Hz refresh rate",
@@ -170,11 +170,11 @@
   },
   {
     "product_id": 2004,
-    "product_title": "Microsoft Surface Laptop",
+    "product_title": "Acer Aspire 3",
     "product_image": "https://i.ibb.co.com/n1hk18S/Microsoft-Surface-Laptop.png",
     "category": "Laptops",
     "price": 1399,
-    "description": "Microsoft Surface Laptop 5 with Intel Core i7, touchscreen, and sleek lightweight design.",
+    "description": "Acer Aspire 3 with Intel Core i7, touchscreen, and sleek lightweight design.",
     "specification": [
       "13.5-inch PixelSense display",
       "16GB RAM",

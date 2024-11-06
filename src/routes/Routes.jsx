@@ -5,6 +5,7 @@ import Dashboard from "../Pages/Dashboard";
 import Layout from "../Layout/Layout";
 import ProductDetail from "../components/ProductDetail";
 import Error from "../Pages/Error";
+import Offer from "../Pages/Offer";
 
 const routes = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const routes = createBrowserRouter([
         path: "detail/:id",
         loader: () => fetch("../gadget.json"),
         element: <ProductDetail></ProductDetail>,
+      },
+      {
+        path: "/offer",
+        element: <Offer></Offer>,
       },
     ],
   },

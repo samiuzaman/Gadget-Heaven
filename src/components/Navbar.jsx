@@ -66,6 +66,14 @@ const Navbar = () => {
             >
               Dashboard
             </NavLink>
+            <NavLink
+              to="/offer"
+              className={({ isActive }) =>
+                `${isActive ? "text-primary underline font-bold" : ""} mr-8`
+              }
+            >
+              Offer
+            </NavLink>
           </ul>
         </div>
         <Link to="/" className="hidden lg:block text-2xl font-semibold">
@@ -100,6 +108,14 @@ const Navbar = () => {
           }
         >
           Dashboard
+        </NavLink>
+        <NavLink
+          to="/offer"
+          className={({ isActive }) =>
+            `${isActive ? "text-primary underline font-bold" : ""} mr-8`
+          }
+        >
+          Offer
         </NavLink>
       </div>
       <div className="navbar-end">
