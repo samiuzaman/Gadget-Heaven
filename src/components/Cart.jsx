@@ -42,7 +42,7 @@ const Cart = () => {
 
       {cart.length === 0 ? (
         <p className="text-3xl text-red-600 font-bold">
-          There are no products in the cart.
+          There are no products in the cart
         </p>
       ) : (
         ""
