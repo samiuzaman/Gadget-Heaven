@@ -42,6 +42,7 @@ const Home = () => {
           </CategoriesProducts.Provider>
         </div>
       </div>
+      
     </div>
   );
 };

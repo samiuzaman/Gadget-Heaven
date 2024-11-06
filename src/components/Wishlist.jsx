@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { WishlistDataStore } from "../Layout/Layout";
-import Items from "./Items";
+import WishlistItem from "./WishlistItem";
 
 const Wishlist = () => {
   const [wishlist, setWishlist] = useContext(WishlistDataStore);
@@ -12,11 +12,10 @@ const Wishlist = () => {
       {/* Product Single Card */}
       <div>
         {wishlist?.map((product) => (
-          <Items
+          <WishlistItem
             key={product.product_id}
             product={product}
-            button={true}
-          ></Items>
+          ></WishlistItem>
         ))}
       </div>
     </div>

@@ -17,6 +17,8 @@ export const TotalProductPrice = createContext(0);
 export const AddToCart = createContext(() => {});
 export const AddToWishlist = createContext(() => {});
 export const ClearAllData = createContext(() => {});
+export const CartToDeleteProduct = createContext(() => {});
+export const WishlistToDeleteProduct = createContext(() => {});
 
 const Layout = () => {
   const navigation = useNavigation();
@@ -26,6 +28,7 @@ const Layout = () => {
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
+  console.log(cart);
 
   // Change Navbar background color functionality
   useEffect(() => {
@@ -70,31 +73,72 @@ const Layout = () => {
     }, 1000);
   };
 
+  // Cart To Delete Product Functionality
+  const deletedCartProduct = (id) => {
+    const updateCartProducts = cart.filter(
+      (product) => product.product_id !== id
+    );
+    setCart(updateCartProducts);
+    toast.error("Item deleted", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  };
+
+  // Wishlish to Deleted Product Functionality
+  const deletedWishlistProduct = (id) => {
+    const updateWishlistProducts = wishlist.filter(
+      (product) => product.product_id !== id
+    );
+    setWishlist(updateWishlistProducts);
+    toast.error("Item deleted", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+    // setWishlist(wishlist.filter((product) => product.product_id !== id));
+  };
+
   return (
     <div>
-      <ClearAllData.Provider value={handleClearData}>
-        <AddToWishlist.Provider value={handleAddToWishlist}>
-          <AddToCart.Provider value={handleAddToCart}>
-            <TotalProductPrice.Provider value={[totalPrice, setTotalPrice]}>
-              <WishlistDataStore.Provider value={[wishlist, setWishlist]}>
-                <CartDataStore.Provider value={[cart, setCart]}>
-                  <NavBackground.Provider value={[color, setColor]}>
-                    <Navbar></Navbar>
-                    <div className=" pt-6 pb-12">
-                      {navigation.state === "loading" ? (
-                        <p>Loading...</p>
-                      ) : (
-                        <Outlet></Outlet>
-                      )}
-                    </div>
-                    <Footer></Footer>
-                  </NavBackground.Provider>
-                </CartDataStore.Provider>
-              </WishlistDataStore.Provider>
-            </TotalProductPrice.Provider>
-          </AddToCart.Provider>
-        </AddToWishlist.Provider>
-      </ClearAllData.Provider>
+      <WishlistToDeleteProduct.Provider value={deletedWishlistProduct}>
+        <CartToDeleteProduct.Provider value={deletedCartProduct}>
+          <ClearAllData.Provider value={handleClearData}>
+            <AddToWishlist.Provider value={handleAddToWishlist}>
+              <AddToCart.Provider value={handleAddToCart}>
+                <TotalProductPrice.Provider value={[totalPrice, setTotalPrice]}>
+                  <WishlistDataStore.Provider value={[wishlist, setWishlist]}>
+                    <CartDataStore.Provider value={[cart, setCart]}>
+                      <NavBackground.Provider value={[color, setColor]}>
+                        <Navbar></Navbar>
+                        <div className=" pt-6 pb-12">
+                          {navigation.state === "loading" ? (
+                            <p>Loading...</p>
+                          ) : (
+                            <Outlet></Outlet>
+                          )}
+                        </div>
+                        <Footer></Footer>
+                      </NavBackground.Provider>
+                    </CartDataStore.Provider>
+                  </WishlistDataStore.Provider>
+                </TotalProductPrice.Provider>
+              </AddToCart.Provider>
+            </AddToWishlist.Provider>
+          </ClearAllData.Provider>
+        </CartToDeleteProduct.Provider>
+      </WishlistToDeleteProduct.Provider>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { CartDataStore, TotalProductPrice } from "../Layout/Layout";
-import Items from "./Items";
+
 import Modal from "./Modal";
+import CartItem from "./CartItem";
 
 const Cart = () => {
   const [totalPrice, setTotalPrice] = useContext(TotalProductPrice);
@@ -12,7 +13,7 @@ const Cart = () => {
     const sorting = [...cart].sort((a, b) => b.price - a.price);
     setCart(sorting);
   };
-  
+
   return (
     <div className="w-11/12 lg:w-5/6 mx-auto my-12">
       <div className="flex justify-between">
@@ -35,11 +36,11 @@ const Cart = () => {
 
       <div>
         {cart?.map((product) => (
-          <Items key={product.product_id} product={product}></Items>
+          <CartItem key={product.product_id} product={product}></CartItem>
         ))}
       </div>
 
-      {cart.length === 0 ? "No Data Found" : ""}
+      {cart.length === 0 ? <p className="text-3xl text-red-600 font-bold">No Data to Show Statistics</p> : ""}
     </div>
   );
 };
