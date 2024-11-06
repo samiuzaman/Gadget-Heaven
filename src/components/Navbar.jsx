@@ -68,13 +68,13 @@ const Navbar = () => {
             </NavLink>
           </ul>
         </div>
-        <h2 className="hidden lg:block text-2xl font-semibold">
+        <Link to="/" className="hidden lg:block text-2xl font-semibold">
           Gadget Heaven
-        </h2>
+        </Link>
       </div>
-      <h2 className="w-2/3 block lg:hidden text-xl font-semibold">
+      <Link to="/" className="w-2/3 block lg:hidden text-xl font-semibold">
         Gadget Heaven
-      </h2>
+      </Link>
 
       <div className="hidden lg:block">
         <NavLink

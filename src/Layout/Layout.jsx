@@ -28,7 +28,6 @@ const Layout = () => {
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
-  console.log(cart);
 
   // Change Navbar background color functionality
   useEffect(() => {
@@ -37,6 +36,21 @@ const Layout = () => {
 
   // Add To Cart Functionality
   const handleAddToCart = (product) => {
+    const findProduct = cart.find(
+      (item) => item.product_id === product.product_id
+    );
+    if (findProduct) {
+      return toast.error("Product Already Exists", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
     setCart([...cart, product]);
     setTotalPrice(totalPrice + product.price);
     toast.success("Item Added to Cart", {
@@ -53,6 +67,21 @@ const Layout = () => {
 
   // Add To WishList Functionality
   const handleAddToWishlist = (product) => {
+    const findProduct = wishlist.find(
+      (item) => item.product_id === product.product_id
+    );
+    if (findProduct) {
+      return toast.error("Product Already Exists", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
     setWishlist([...wishlist, product]);
     toast.success("Item Added to Wishlist", {
       position: "top-center",

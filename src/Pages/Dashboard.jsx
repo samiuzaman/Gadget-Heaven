@@ -1,11 +1,17 @@
 import { useState } from "react";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
+import { Helmet } from "react-helmet";
 
 const Dashboard = () => {
   const [cart, setCart] = useState(true);
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Dashboard | Gadget Heaven</title>
+        <link rel="canonical" href="/" />
+      </Helmet>
       {/* Heading Section Code Start Here */}
       <div className="text-center bg-primary mt-[-24px] py-8 ">
         <h1 className="text-2xl lg:text-3xl text-white font-bold mb-6 ">

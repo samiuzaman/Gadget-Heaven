@@ -17,15 +17,20 @@ import {
 } from "recharts";
 import { CartDataStore, TotalProductPrice } from "../Layout/Layout";
 import { BiFullscreen } from "react-icons/bi";
+import { Helmet } from "react-helmet";
 
 const LineCharts = () => {
   const allProducts = useLoaderData();
   const [totalPrice, setTotalPrice] = useContext(TotalProductPrice);
   const [cart, setCart] = useContext(CartDataStore);
-  console.log(allProducts);
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>statistics | Gadget Heaven</title>
+        <link rel="canonical" href="/" />
+      </Helmet>
       <div className="text-center bg-primary mt-[-24px] py-8 mb-10">
         <h1 className="text-2xl lg:text-3xl text-white font-bold mb-6 ">
           Dashboard

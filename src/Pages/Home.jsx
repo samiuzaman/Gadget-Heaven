@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Categories from "../components/categories";
 import ProductCard from "../components/ProductCard";
 import { createContext, useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 export const CategoriesProducts = createContext([]);
 
@@ -28,6 +29,11 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home | Gadget Heaven</title>
+        <link rel="canonical" href="/" />
+      </Helmet>
       {/* Banner Section Code Start Here */}
       <Banner></Banner>
       {/* Category and Product section Code Start Here  */}
@@ -42,7 +48,6 @@ const Home = () => {
           </CategoriesProducts.Provider>
         </div>
       </div>
-      
     </div>
   );
 };
