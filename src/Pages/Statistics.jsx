@@ -28,31 +28,18 @@ const LineCharts = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>statistics | Gadget Heaven</title>
+        <title>Statistics | Gadget Heaven</title>
         <link rel="canonical" href="/" />
       </Helmet>
       <div className="text-center bg-primary mt-[-24px] py-8 mb-10">
         <h1 className="text-2xl lg:text-3xl text-white font-bold mb-6 ">
-          Dashboard
+          Statistics
         </h1>
         <p className=" text-white px-6 lg:px-72 text-center">
-          Explore the latest gadgets that will take your experience to the next
-          level. From smart devices to the coolest accessories, we have it all!
+          Explore the latest insights and data about our platform performance,
+          user engagement, and overall impact. Keep track of our growth and see
+          how Gadget Heaven is evolving every day!
         </p>
-        <div className="mt-5">
-          <button
-            onClick={() => setCart(true)}
-            className="btn bg-white rounded-full text-primary hover:bg-primary hover:text-white text-base font-medium px-6 mr-6"
-          >
-            Cart
-          </button>
-          <button
-            onClick={() => setCart(false)}
-            className="btn btn-outline border-white text-white rounded-full hover:bg-primary hover:border-white text-base font-medium px-6"
-          >
-            Wishlist
-          </button>
-        </div>
       </div>
       <div className="w-11/12 lg:w-5/6 mx-auto bg-white rounded-xl">
         <ComposedChart

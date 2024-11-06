@@ -3,7 +3,10 @@ const Footer = () => {
     <footer className="bg-white py-10">
       <div className="text-center">
         <h3 className="text-3xl text-myDark1 font-bold mb-3">Gadget Heaven</h3>
-        <p>Leading the way in cutting-edge technology and innovation.</p>
+        <p>
+          Whether a customer is purchasing or inquiring, our customers get the
+          highest priority
+        </p>
       </div>
       <div className="w-11/12 lg:w-5/6 mx-auto divider"></div>
       <div className="footer  text-secondary flex justify-evenly">

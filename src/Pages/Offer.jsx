@@ -13,9 +13,9 @@ const Offer = () => {
         <link rel="canonical" href="/" />
       </Helmet>
       <h2 className="text-2xl text-myDark1 font-bold">Offer</h2>
-      <div className="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Asus Offer Cart */}
-        <div className="card bg-base-100 w-96 shadow-xl">
+        <div className="card bg-base-100 w-96 shadow-xl transition hover:scale-105">
           <figure className="h-80">
             <img className="w-full h-full" src={Asus} alt="Shoes" />
           </figure>
@@ -36,7 +36,7 @@ const Offer = () => {
           </div>
         </div>
         {/* Gigabyte Monitor Offer Cart */}
-        <div className="card bg-base-100 w-96 shadow-xl">
+        <div className="card bg-base-100 w-96 shadow-xl transition hover:scale-105">
           <figure className="h-80">
             <img className="w-full h-full" src={Gigabyte} alt="Shoes" />
           </figure>
@@ -57,7 +57,7 @@ const Offer = () => {
           </div>
         </div>
         {/* Acer Offer Cart */}
-        <div className="card bg-base-100 w-96 shadow-xl">
+        <div className="card bg-base-100 w-96 shadow-xl transition hover:scale-105">
           <figure className="h-80">
             <img className="w-full h-full" src={Acer} alt="Shoes" />
           </figure>

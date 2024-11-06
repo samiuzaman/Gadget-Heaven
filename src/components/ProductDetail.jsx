@@ -4,6 +4,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaStar } from "react-icons/fa";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 import { AddToCart, AddToWishlist } from "../Layout/Layout";
+import { Helmet } from "react-helmet";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -31,6 +32,11 @@ const ProductDetail = () => {
 
   return (
     <div className="relative text-center bg-primary  pb-64 mt-[-24px] mb-72 pt-8">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Details | Gadget Heaven</title>
+        <link rel="canonical" href="/" />
+      </Helmet>
       <h1 className="text-2xl lg:text-3xl text-white font-bold w-full lg:w-4/6 mx-auto px-5 lg:px-0">
         Product Details
       </h1>

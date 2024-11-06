@@ -18,8 +18,9 @@ const Dashboard = () => {
           Dashboard
         </h1>
         <p className=" text-white px-6 lg:px-72 text-center">
-          Explore the latest gadgets that will take your experience to the next
-          level. From smart devices to the coolest accessories, we have it all!
+          Your centralized hub for managing content, tracking analytics, and
+          accessing all essential tools to keep Gadget Heaven running smoothly.
+          Dive in and take control!
         </p>
         <div className="mt-5">
           <button

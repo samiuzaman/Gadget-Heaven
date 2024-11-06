@@ -8,8 +8,8 @@ const Banner = () => {
         Upgrade Your Tech Accessorize with Gadget Heaven Accessories
       </h1>
       <p className=" text-white px-6 lg:px-72 text-center">
-        Explore the latest gadgets that will take your experience to the next
-        level. From smart devices to the coolest accessories, we have it all!
+        Gadget Heaven is the Best Laptop, Mobile, Monitor,
+        Accessories, and Gadget retail & Online shop in Bangladesh
       </p>
       <Link
         to="/dashboard"
