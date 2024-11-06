@@ -40,7 +40,13 @@ const Cart = () => {
         ))}
       </div>
 
-      {cart.length === 0 ? <p className="text-3xl text-red-600 font-bold">No Data to Show Statistics</p> : ""}
+      {cart.length === 0 ? (
+        <p className="text-3xl text-red-600 font-bold">
+          There are no products in the cart.
+        </p>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
