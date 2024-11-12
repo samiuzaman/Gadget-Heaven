@@ -44,8 +44,8 @@ const ProductDetail = () => {
         Explore the latest gadgets that will take your experience to the next
         level. From smart devices to the coolest accessories, we have it all!
       </p>
-      <div className="absolute lg:inset-x-12 w-full lg:w-4/5 mx-auto flex flex-col lg:flex-row p-6 bg-white border-2 border-white rounded-2xl text-center gap-8">
-        <figure className="w-[450px] bg-base-200 flex items-center rounded-xl ">
+      <div className="absolute lg:inset-x-12 w-full lg:w-4/5 mx-auto flex flex-col lg:flex-row p-6 bg-white border-2 border-white rounded-2xl text-center gap-8 pb-10">
+        <figure className="w-full md:w-[450px] bg-base-200 flex items-center rounded-xl ">
           <img className="w-full " src={product_image} alt="" />
         </figure>
         <div className="text-left text-secondary">

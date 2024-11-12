@@ -14,6 +14,7 @@ import {
   Legend,
   ComposedChart,
   Area,
+  ResponsiveContainer,
 } from "recharts";
 import { CartDataStore, TotalProductPrice } from "../Layout/Layout";
 import { BiFullscreen } from "react-icons/bi";
@@ -41,45 +42,50 @@ const LineCharts = () => {
           how Gadget Heaven is evolving every day!
         </p>
       </div>
-      <div className="w-11/12 lg:w-5/6 mx-auto bg-white rounded-xl">
-        <ComposedChart
-          width={1200}
-          height={450}
-          data={allProducts}
-          margin={{
-            top: 20,
-            right: 80,
-            bottom: 20,
-            left: 20,
-          }}
-        >
-          <CartesianGrid stroke="#f5f5f5" />
-          <XAxis
-            dataKey="product_title"
-            label={{
-              value: "Product Name",
-
-              offset: 0,
-              style: {
-                fontSize: "10px",
-              },
+      <div className="w-full lg:w-5/6 mx-auto bg-white rounded-xl">
+        <ResponsiveContainer width="100%" height={400}>
+          <ComposedChart
+            data={allProducts}
+            margin={{
+              top: 20,
+              right: 80,
+              bottom: 20,
+              left: 20,
             }}
-            tick={{ fontSize: 10 }}
-            angle={-10}
-            textAnchor="end"
-            scale="band"
-            dy={10}
-          />
-          <YAxis
-            className=""
-            label={{ value: "Price", angle: -90, position: "insideLeft" }}
-          />
-          <Tooltip />
-          <Legend />
-          <Area type="monotone" dataKey="amt" fill="#8884d8" stroke="#8884d8" />
-          <Bar dataKey="price" barSize={25} fill="#413ea0" />
-          <Area type="monotone" dataKey="price" stroke="#ff7300" />
-        </ComposedChart>
+          >
+            <CartesianGrid stroke="#f5f5f5" />
+            <XAxis
+              dataKey="product_title"
+              label={{
+                value: "Product Name",
+
+                offset: 0,
+                style: {
+                  fontSize: "10px",
+                },
+              }}
+              tick={{ fontSize: 10 }}
+              angle={-10}
+              textAnchor="end"
+              scale="band"
+              dy={10}
+            />
+            <YAxis
+              className=""
+              label={{ value: "Price", angle: -90, position: "insideLeft" }}
+            />
+            <Tooltip />
+            <Legend />
+            <Area
+              type="monotone"
+              dataKey="amt"
+              fill="#8884d8"
+              stroke="#8884d8"
+            />
+            <Bar dataKey="price" barSize={25} fill="#413ea0" />
+            <Area type="monotone" dataKey="price" stroke="#ff7300" />
+          </ComposedChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );

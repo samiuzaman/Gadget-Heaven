@@ -9,8 +9,8 @@ const WishlistItem = ({ product }) => {
   return (
     <div>
       <div className="flex justify-between items-center border-2 p-5 my-6 rounded-xl shadow-lg">
-        <div className="flex items-center gap-6">
-          <figure className="w-40 h-36 flex justify-center items-center">
+        <div className="flex flex-col lg:flex-row items-center gap-6">
+          <figure className="w-full lg:w-40 h-36 flex justify-center items-center">
             <img
               className="w-full h-full bg-base-300 rounded-xl"
               src={product_image}
